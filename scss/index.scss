@@ -1,0 +1,52 @@
+@import 'footer';
+
+$primary-color: #ff0000;
+$secondary-color: #333;
+
+// Definir variables globales
+$primary-color: #ff0000;
+$secondary-color: #333;
+
+// Importar partials
+@import "index";
+
+// Estilos globales
+body {
+font-family: Arial, sans-serif;
+font-size: 16px;
+color: $secondary-color;
+background-color: #fff;
+}
+
+a {
+color: $primary-color;
+text-decoration: none;
+
+&:hover {
+    text-decoration: underline;
+}
+}
+
+button, input[type="submit"] {
+@include button-style;
+}
+
+// Media queries
+@media screen and (max-width: 600px) {
+  // Estilos para pantallas pequeñas
+}
+
+$colores: #f00, #0f0, #00f;
+
+@each $color in $colores {
+  .color-#{$color} {
+    background-color: $color;
+    &.lighten {
+      background-color: lighten($color, 20%);
+    }
+    &.darken {
+      background-color: darken($color, 20%);
+    }
+  }
+}
+

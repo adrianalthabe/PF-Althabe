@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Futbol Center</title>
+    <meta name="description" content="Mi sitio web es un complejo deportivo, ubicado en san vicente, buenos aires.">
+    <meta name="keywords" content="sitio web, información, entretenimiento, temas">
+
+
     <!--Solo por protocolo segun curso, mi css pasa por boxicons. Demuestro la atencion en clase, pero tambien busco mis propios medios. Para aplicar los estilos de Bootstrap que encuentre en mi css-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./scss/index.scss">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header class="hero">
         <nav class="nav__hero">
@@ -20,7 +28,7 @@
 
                     <a href="index.html" class="link">Inicio</a>
 
-                    <a href="./pages/Cómo llegar.html" class="link">¿Cómo llegar?</a>
+                    <a href="./pages/Como-llegar.html" class="link">¿Cómo llegar?</a>
 
                     <a href="./pages/torneos.html" class="link">Torneos</a>
 
@@ -33,13 +41,13 @@
         </nav>
 
 
-        <section class="container hero__main">  
+        <section class="container hero__main">
             <div class="hero__textos">
-                <h1 class="title">El mejor <span class="title--active">Complejo Deportivo.</span></h1> 
+                <h1 class="title">El mejor <span class="title--active">Complejo Deportivo.</span></h1>
                 <p class="copy">La calidad no es un acto, <span class="copy__active">sino un hábito</span></p>
                 <a href="http://wa.me/5491126886188" class="cta">Reserva tu cancha</a>
             </div>
-            <img src="img/Futbolcenter.png" class="fcenter">
+            <img src="img/Futbolcenter.png" class="fcenter" alt="logo personalizado futbol center">
         </section>
     </header>
 
@@ -47,33 +55,37 @@
         <section class="service">
             <div class="container">
                 <h2 class="subtitle">Nuestros servicios<span class="point">.</span></h2>
-                <p class="copy__section">Cuando la gente tiene éxito, es gracias al trabajo duro. La suerte no tiene nada que ver con el éxito. Diego Maradona</p>
+                <p class="copy__section">Cuando la gente tiene éxito, es gracias al trabajo duro. La suerte no tiene
+                    nada que ver con el éxito. Diego Maradona</p>
 
                 <article class="container-cards">
                     <div class="card">
-                        <img src="img/personalizadoadrian1.jpg" class="card__img">
+                        <img src="img/personalizadoadrian1.jpg" class="card__img" alt="imagen personalizada para futbol center">
                         <div class="cards__text">
                             <p class="card__list">Viví el Futbol con todo el lujo</p>
                             <h3 class="card__title">F.Center<span class="point">.</span></h3>
-                            <p class="card__copy">Contamos con 2 canchas de césped sintético profesional,sobre un predio con excelente iluminacion para juegos nocturnos.!</p>
+                            <p class="card__copy">Contamos con 2 canchas de césped sintético profesional,sobre un predio
+                                con excelente iluminacion para juegos nocturnos.!</p>
                             <a href="http://wa.me/5491126886188" class="card__button">Whatsapp.</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/personalizadoadrian2.jpg" class="card__img">
+                        <img src="img/personalizadoadrian2.jpg" class="card__img" alt="personalizada2 para futbol center">
                         <div class="cards__text">
                             <p class="card__list">Entrada en calor o post Partido</p>
                             <h3 class="card__title">Ping Pong<span class="point">.</span></h3>
-                            <p class="card__copy">Vení a disfrutar de toda la variedad de juegos con los que contamos.Totalmente Gratis en nuestro buffet</p>
+                            <p class="card__copy">Vení a disfrutar de toda la variedad de juegos con los que
+                                contamos.Totalmente Gratis en nuestro buffet</p>
                             <a href="#" class="card__button">Entretenimientos</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/personalizadoadrian3.jpg" class="card__img">
+                        <img src="img/personalizadoadrian3.jpg" class="card__img" alt="personalizada3 para futbol center">
                         <div class="cards__text">
                             <p class="card__list">Pasá por nuestro buffet</p>
                             <h3 class="card__title">Buffet y bar<span class="point">.</span></h3>
-                            <p class="card__copy">Disfrutá de la previa o post partido en nuestro Buffet. Tu lugar de encuentro! La pasión del fútbol nos une en el Mejor Lugar del sur!</p>
+                            <p class="card__copy">Disfrutá de la previa o post partido en nuestro Buffet. Tu lugar de
+                                encuentro! La pasión del fútbol nos une en el Mejor Lugar del sur!</p>
                             <a href="#" class="card__button">Carta Menu</a>
                         </div>
                     </div>
@@ -93,8 +105,8 @@
                     </div>
                 </div>
                 <div class="background">
-                    <img src="img/goldcupAdrian.jpg" class="background__img">
-                    </div>
+                    <img src="img/goldcupAdrian.jpg" class="background__img" alt="copa gold cup san vicente">
+                </div>
                 </div>
                 <div class="card">
                     <div class="cards__text">
@@ -105,8 +117,8 @@
                     </div>
                 </div>
                 <div class="background">
-                    <img src="img/SpartaneditAdrian.jpg" class="background__img">
-                    </div>
+                    <img src="img/SpartaneditAdrian.jpg" class="background__img" alt="torneo spartan personalizado">
+                </div>
                 </div>
             </article>
         </section>
@@ -117,7 +129,7 @@
 
                 <div class="Sponsors-container">
                     <div class="Sponsors__card">
-                        <img src="img/forbex.jpg" class="Sponsors__img">
+                        <img src="img/forbex.jpg" class="Sponsors__img" alt="imagen sponsor">
                         <div class="Sponsors__copy">
                             <div class="Sponsors__info">
                                 <h3 class="Sponsors__name">Casa Central</h3>
@@ -127,7 +139,7 @@
                     </div>
 
                     <div class="Sponsors__card">
-                        <img src="img/nassauadrian.jpg" class="Sponsors__img">
+                        <img src="img/nassauadrian.jpg" class="Sponsors__img" alt="imagen sponsor2">
                         <div class="Sponsors__copy">
                             <div class="Sponsors__info">
                                 <h3 class="Sponsors__name">Pedro Estolber</h3>
@@ -138,8 +150,9 @@
 
                     <div class="Sponsors__card">
                         <div class="Sponsors__text">
-                            <img src="img/google_logo.svg" class="google__logo">
-                            <p class="Sponsors__history">“Para mayor informacion, buscanos en google. Nuestros sponsor nos apoyan y confian en Nuestro Complejo Deportivo”</p>
+                            <img src="img/google_logo.svg" class="google__logo" alt="logo google">
+                            <p class="Sponsors__history">“Para mayor informacion, buscanos en google. Nuestros sponsor
+                                nos apoyan y confian en Nuestro Complejo Deportivo”</p>
                             <div class="Sponsors__copy Sponsors__copy--modifier">
                                 <div class="Sponsors__info">
                                     <h3 class="Sponsors__name">LLC</h3>
@@ -148,33 +161,36 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
 
         <section class="email container container--modifier">
-            <h2 class="subtitle subtitle--modifier">Somos tu mejor opción a la hora de hacer deporte<span class="point">.</span></h2>
+            <h2 class="subtitle subtitle--modifier">Somos tu mejor opción a la hora de hacer deporte<span
+                    class="point">.</span></h2>
 
-            <p class="copy__section copy__section--modifier">-------------------Nuestro fin es que cada uno tenga una experiencia unica e irrepetible en nuestro complejo.------------------- Mediante el compromiso y el profesionalismo de todos los que formamos parte!</p>
+            <p class="copy__section copy__section--modifier">-------------------Nuestro fin es que cada uno tenga una
+                experiencia unica e irrepetible en nuestro complejo.------------------- Mediante el compromiso y el
+                profesionalismo de todos los que formamos parte!</p>
 
             <div class="check">
                 <div class="check__item">
-                    <i class='bx bx-check' ></i>
+                    <i class='bx bx-check'></i>
                     <div class="check__numbers">
                         <p class="check__number">+100</p>
                         <p class="check__copy">Torneos exitosos</p>
                     </div>
                 </div>
                 <div class="check__item">
-                    <i class='bx bx-check' ></i>
+                    <i class='bx bx-check'></i>
                     <div class="check__numbers">
                         <p class="check__number">+1000</p>
                         <p class="check__copy">Clientes Satisfechos</p>
                     </div>
                 </div>
                 <div class="check__item">
-                    <i class='bx bx-check' ></i>
+                    <i class='bx bx-check'></i>
                     <div class="check__numbers">
                         <p class="check__number">+50</p>
                         <p class="check__copy">Donaciones</p>
@@ -184,9 +200,9 @@
             <div class="parent-wrapper">
                 <span class="close-btn glyphicon glyphicon-remove"></span>
                 <div class="subscribe-wrapper">
-                <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
-                <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
-                <div class="submit-btn">SUBMIT</div>
+                    <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+                    <input type="email" name="email" class="subscribe-input" placeholder="Your e-mail">
+                    <div class="submit-btn">SUBMIT</div>
                 </div>
             </div>
         </section>
@@ -195,44 +211,47 @@
     <footer class="footer">
         <div class="container footer__caption">
 
-                <div class="footer__copy">
-                    <p class="copyright">Futbol Center &copy; 2023 Todos los derechos reservados</p>
-                    <p>#1</p>
-                    <p>Gracias por visitarnos</p>
-                </div>
+            <div class="footer__copy">
+                <p class="copyright">Futbol Center &copy; 2023 Todos los derechos reservados</p>
+                <p>#1</p>
+                <p>Gracias por visitarnos</p>
+            </div>
             </section>
-                </form>
-                <div class="socialmedia">
-                    <p class="socialmedia__legend">Siguenos en:</p>
-                    <i class='socialmedia__icon bx bxl-facebook-circle'></i>
-                    <i class='socialmedia__icon bx bxl-linkedin-square'></i>                                                                                                        
-                    <i class='socialmedia__icon bx bxl-twitter' ></i>   
-                    <i class='socialmedia__icon bx bxl-instagram' ></i>
-                    <i class='socialmedia__icon bx bxl-github' ></i>  
-                </div>
+            </form>
+            <div class="socialmedia">
+                <p class="socialmedia__legend">Siguenos en:</p>
+                <i class='socialmedia__icon bx bxl-facebook-circle'></i>
+                <i class='socialmedia__icon bx bxl-linkedin-square'></i>
+                <i class='socialmedia__icon bx bxl-twitter'></i>
+                <i class='socialmedia__icon bx bxl-instagram'></i>
+                <i class='socialmedia__icon bx bxl-github'></i>
+            </div>
             </section>
         </div>
 
         <div class="contact">
             <div class="item__contact">
-                <i class='bx bx-copyright contact__icon' ></i>
+                <i class='bx bx-copyright contact__icon'></i>
                 <h3 class="contact__title">Adrian Althabe</h3>
             </div>
             <div class="item__contact">
-                <i class='bx bx-mail-send contact__icon' ></i>
+                <i class='bx bx-mail-send contact__icon'></i>
                 <h3 class="contact__title">adrianalthabe@gmail.com</h3>
             </div>
             <div class="item__contact">
-                <i class='bx bxs-edit-location contact__icon' ></i>
+                <i class='bx bxs-edit-location contact__icon'></i>
                 <h3 class="contact__title">Ubicarme</h3>
             </div>
             <div class="item__contact item__contact--gold">
-                <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i>
+                <i class='bx bxs-chat contact__icon contact__icon--modifier'></i>
                 <h3 class="contact__title">Chatea conmigo</h3>
             </div>
         </div>
     </footer>
     <!-- Se repite protocolo en curso-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
