@@ -1,0 +1,9 @@
+.primera-seccion-como-llegar{
+
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+background-repeat: no-repeat;
+@extend %extend-primera-seccion;
+@include display-primera-seccion(flex,center,center);
+}

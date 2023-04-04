@@ -1,0 +1,53 @@
+/*nav-listas*/
+
+%nav-listas{
+    color: $white;
+    font-size: 1.25rem;
+    animation: fadeIn 1s ;
+}
+
+/*primera seccion*/
+
+%extend-primera-seccion{
+    
+    height:80vh;
+    width: 100%;
+
+}
+
+/*titulo-primera-seccion*/
+
+%titulo-seccion-uno{
+    color:$white-special;
+    text-align:center;
+    text-shadow: $dark 5px 2px;
+}
+
+/*layout producto*/
+
+
+%extend-producto{
+    height:490px;
+    width:315px;
+    text-align: center;
+    background-color: $white;
+    border-radius: 12px;
+    margin-bottom:20px;
+}
+
+
+/*imagen-nosotros*/
+
+%imagen-nosotros{
+    width: 36%;
+    height:auto;
+    margin-bottom:20px;
+}
+
+
+/*carrito borde*/
+%carrito-borde{
+    border:1px solid $gray;
+    display:flex;
+    align-items:center;
+}
