@@ -1,0 +1,42 @@
+#container-cards {
+    animation: girar 2s infinite linear;
+  }
+
+  #logo__name &:hover {
+    background-color: red;
+  }
+  
+  .logo__name {
+    font-size: 24px;
+  }
+  
+  .link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px;
+  }
+  
+  .link--active {
+    color: var(--melloye);
+    font-weight: 700;
+  }
+  
+  .point {
+    color: var(--melloye);
+  }
+  
+  
+  .fcenter {
+    object-fit: cover;
+    width: 48%;
+    max-height: 90vh;
+  }
+  
+  .fcpersonalizadaubi {
+    object-fit: cover;
+    width: 40%;
+    max-height: 90vh;
+  }
+  

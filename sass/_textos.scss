@@ -1,0 +1,22 @@
+.hero__textos {
+    width: 48%;
+  }
+  
+  .title {
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .copy {
+    font-size: 24px;
+    color: var(--gray);
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+  }
+  
+  .copy__active {
+    font-weight: 700;
+  }
+  
+  

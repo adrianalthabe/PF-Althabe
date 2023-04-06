@@ -1,0 +1,196 @@
+@import "variablesGlobales";
+@import "generales";
+@import "nav";
+@import "torneosspon";
+@import "check";
+@import "social";
+@import "textos";
+@import "personal";
+
+@keyframes girar {
+  from { transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 900px) {
+  .fcenter {
+    width: 600px;
+    height: auto;
+  }
+
+  .cta {
+    padding: 15px 22px;
+  }
+
+  .container-cards {
+    justify-content: space-evenly;
+  }
+
+  .service .card {
+    width: 45%;
+  }
+
+  .background {
+    width: 52%;
+  }
+
+  .card {
+    width: 42%;
+  }
+
+  .Sponsors-container {
+    justify-content: space-evenly;
+  }
+
+  .Sponsors__card {
+    width: 45%;
+  }
+
+  .check__item {
+    width: 45%;
+    margin-bottom: 35px;
+  }
+
+  .parent-wrapper {
+    width: 80%;
+  }
+
+  .socialmedia__icon {
+    font-size: 18px;
+  }
+
+  .socialmedia__legend {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main .container,
+  footer .container {
+    padding: 60px 0;
+  }
+
+  .nav__container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .nav__hero {
+    height: auto;
+  }
+
+  .logo {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .links {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .link {
+    padding: 7px 10px;
+  }
+
+  .hero__main {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    min-height: 70px;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .hero__textos {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fcenter {
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  .container-bg {
+    justify-content: space-evenly;
+  }
+
+  .card {
+    margin-bottom: 40px;
+    width: 65%;
+  }
+
+  .card__button {
+    width: 100%;
+  }
+
+  .background {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+
+  .Sponsors__card {
+    width: 65%;
+  }
+
+  .Sponsors__name {
+    font-size: 20px;
+  }
+
+  .container--modifier {
+    width: 80%;
+  }
+
+  .item__contact {
+    width: 100%;
+    padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fcenter {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .service .card {
+    width: 95%;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  .background {
+    width: 95%;
+  }
+
+  .Sponsors__card {
+    width: 95%;
+  }
+
+  .Sponsors__history {
+    font-size: 20px;
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  :root {
+    --ancho-lineas: 3px;
+  }
+}

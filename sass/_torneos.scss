@@ -1,0 +1,204 @@
+/* Tournament */
+
+.Tournament {
+    background: #fafafa;
+  }
+  
+  .subtitle {
+    font-size: 42px;
+  }
+  
+  .subtitle--modifier {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  
+  .copy__section {
+    color: var(--zardaverde);
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  
+  .copy__section--modifier {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  
+  .container-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--zardaverde) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color_shadow);
+  }
+  
+  .card__img {
+    width: 95%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .cards__text {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .card__list {
+    color: var(--naradorange);
+    font-weight: 700;
+    margin: 25px 0 12px;
+    font-size: 18px;
+  }
+  
+  .card__title {
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .card__copy {
+    color: var(--gray2);
+    margin-bottom: 16px;
+  }
+  
+  .card__button {
+    display: block;
+    background: linear-gradient(180deg, #dee3dc 0%, #779c00 100%);
+    border-radius: 6px;
+    text-decoration: none;
+    width: 100%;
+    color: var(--black1);
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+  }
+  
+  .card__date {
+    color: var(--naradorange);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .container-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .background {
+    width: 68%;
+    height: 290px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .background__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  
+  .Sponsors {
+    background: #fafafa;
+  }
+  
+  .Sponsors-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .Sponsors__card {
+    width: 30%;
+    height: 500px;
+    background: linear-gradient(180deg, var(--zardaverde) 0%, var(--black1) 100%);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .Sponsors__img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center top;
+  }
+  
+  .Sponsors__copy {
+    position: absolute;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+    background: linear-gradient(180deg, var(--zardaverde) 0%, var(--black1) 100%);
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: var(--shadow) var(--color_shadow);
+    padding: 15px 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .Sponsors__logo {
+    font-size: 40px;
+    margin-right: 15px;
+    display: inline-block;
+  }
+  
+  .Sponsors__name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  
+  .Sponsors__position {
+    color: var(--gray);
+  }
+  
+  .Sponsors__text {
+    padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  .google__logo {
+    margin-bottom: 20px;
+  }
+  
+  .Sponsors__history {
+    font-size: 21px;
+    font-weight: 300;
+  }
+  
+  .Sponsors__info {
+    width: 70%;
+  }
+  
+  .logo--picture {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center top;
+  }
+  
