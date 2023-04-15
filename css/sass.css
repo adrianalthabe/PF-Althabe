@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 :root {
   --melloye: #ffd045;
   --naradorange: #ffaa00;
@@ -44,29 +45,79 @@ body {
   border-radius: 6px;
 }
 
+.hero__main {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
 .hero {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(180deg, var(--zardaverde) 0%, var(--black1) 100%);
 }
 
-.nav__hero {
+.hero .nav__hero {
   color: #fff;
-  height: 70px;
+  height: -1px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: #333 !important;
 }
 
-.nav__container {
-  display: flex;
+.hero .nav__container {
   align-items: center;
-  justify-content: space-between;
+  width: 70%;
+  justify-content: center !important;
   height: inherit;
   padding: 0;
+}
+
+.navbar-light .navbar-toggler {
+  color: #ffd045;
+  border: outset;
+}
+
+.hero .logo {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #nav__container {
   background-color: blue;
   transition: background-color 1s ease;
+}
+
+#logo__name:hover {
+  background-color: red;
+}
+
+.logo__name {
+  font-size: 24px;
+}
+
+.link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.link--active {
+  color: var(--melloye);
+  font-weight: 700;
+}
+
+.point {
+  color: var(--melloye);
+}
+
+.btn-navbar {
+  border: 1px solid white;
+  margin-right: 10px;
 }
 
 /* Tournament */
@@ -118,7 +169,7 @@ body {
   width: 95%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px 0 0 10px;
 }
 
@@ -184,7 +235,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: inherit;
 }
 
@@ -213,9 +264,9 @@ body {
   height: 100%;
   border-radius: inherit;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center top;
-     object-position: center top;
+  object-position: center top;
 }
 
 .Sponsors__copy {
@@ -272,10 +323,10 @@ body {
   width: 40px;
   height: 40px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   -o-object-position: center top;
-     object-position: center top;
+  object-position: center top;
 }
 
 /* check */
@@ -441,7 +492,7 @@ body {
 
 .item__contact {
   width: 25%;
-  padding: 60px 0;
+  padding: 40px 0;
   text-align: center;
   background: linear-gradient(180deg, var(--zardaverde) 0%, var(--black1) 100%);
 }
@@ -472,6 +523,11 @@ body {
   color: #fff;
 }
 
+.title .title--active {
+  color: var(--orange);
+  font-weight: 700;
+}
+
 .copy {
   font-size: 24px;
   color: var(--gray);
@@ -483,6 +539,24 @@ body {
   font-weight: 700;
 }
 
+#container-cards {
+  animation: girar 2s infinite linear;
+}
+
+.fcenter {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 48%;
+  max-height: 90vh;
+}
+
+.fcpersonalizadaubi {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 40%;
+  max-height: 90vh;
+}
+
 @keyframes girar {
   from {
     transform: rotate(0deg);
@@ -491,59 +565,10 @@ body {
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-}
-#container-cards {
-  animation: girar 2s infinite linear;
-}
-
-#logo__name:hover {
-  background-color: red;
-}
-
-.logo__name {
-  font-size: 24px;
-}
-
-.link {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-  font-weight: 300;
-  padding: 10px;
-}
-
-.link--active {
-  color: var(--melloye);
-  font-weight: 700;
-}
-
-.point {
-  color: var(--melloye);
-}
-
-.hero__main {
-  height: calc(100vh - 70px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-.fcenter {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 48%;
-  max-height: 90vh;
-}
-
-.fcpersonalizadaubi {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 40%;
-  max-height: 90vh;
 }
 
 @media screen and (max-width: 900px) {
@@ -551,65 +576,84 @@ body {
     width: 600px;
     height: auto;
   }
+
   .cta {
     padding: 15px 22px;
   }
+
   .container-cards {
     justify-content: space-evenly;
   }
+
   .service .card {
     width: 45%;
   }
+
   .background {
     width: 52%;
   }
+
   .card {
     width: 42%;
   }
+
   .Sponsors-container {
     justify-content: space-evenly;
   }
+
   .Sponsors__card {
     width: 45%;
   }
+
   .check__item {
     width: 45%;
     margin-bottom: 35px;
   }
+
   .parent-wrapper {
     width: 80%;
   }
+
   .socialmedia__icon {
     font-size: 18px;
   }
+
   .socialmedia__legend {
     font-size: 18px;
   }
 }
+
 @media screen and (max-width: 700px) {
+
   main .container,
   footer .container {
     padding: 60px 0;
   }
+
   .nav__container {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
   }
+
   .nav__hero {
     height: auto;
   }
+
   .logo {
     padding: 15px 0;
     text-align: center;
   }
+
   .links {
     padding-bottom: 10px;
     text-align: center;
   }
+
   .link {
     padding: 7px 10px;
   }
+
   .hero__main {
     flex-direction: column-reverse;
     justify-content: flex-end;
@@ -617,75 +661,97 @@ body {
     height: auto;
     padding: 30px 0;
   }
+
   .hero__textos {
     width: 100%;
     text-align: center;
   }
+
   .fcenter {
     width: 60%;
     margin-bottom: 20px;
   }
+
   .container-bg {
     justify-content: space-evenly;
   }
+
   .card {
     margin-bottom: 40px;
     width: 65%;
   }
+
   .card__button {
     width: 100%;
   }
+
   .background {
     width: 65%;
     margin-bottom: 40px;
   }
+
   .Sponsors__card {
     width: 65%;
   }
+
   .Sponsors__name {
     font-size: 20px;
   }
+
   .container--modifier {
     width: 80%;
   }
+
   .item__contact {
     width: 100%;
     padding: 30px 0;
   }
 }
+
 @media screen and (max-width: 500px) {
   .fcenter {
     width: 80%;
     margin-bottom: 15px;
   }
+
   .service .card {
     width: 95%;
   }
+
   .card {
     width: 95%;
   }
+
   .background {
     width: 95%;
   }
+
   .Sponsors__card {
     width: 95%;
   }
+
   .Sponsors__history {
     font-size: 20px;
   }
+
   * {
     margin: 0px;
     padding: 0px;
   }
+
   html {
     box-sizing: border-box;
   }
+
   *,
   *:before,
   *:after {
     box-sizing: inherit;
   }
+
   :root {
     --ancho-lineas: 3px;
   }
-}/*# sourceMappingURL=sass.css.map */
+}
+
+/*# sourceMappingURL=sass.css.map */

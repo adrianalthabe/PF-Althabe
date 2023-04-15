@@ -13,33 +13,46 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/sass.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <header class="hero">
-        <nav class="nav__hero">
-            <div class="container nav__container">
-                <div class="logo">
-                    <h2 class="logo__name">Futbol Center<span class="point">.</span></h2>
-                </div>
-                <div class="links">
-
-                    <a href="index.html" class="link">Inicio</a>
-
-                    <a href="./pages/Como-llegar.html" class="link">¿Cómo llegar?</a>
-
-                    <a href="./pages/torneos.html" class="link">Torneos</a>
-
-                    <a href="./pages/sponsors.html" class="link">Sponsors</a>
-
-                    <a href="./pages/contacto.html" class="link link--active">Contacto</a>
-
-                </div>
+        <!-- SE AGREGA UNA NAVBAR FONDO OSCURO Y DIVISION PARA MEJOR VISUALIZACION. ADEMAS SE ADAPTA UN MENU HAMBURGUESA -->
+        <nav class="navbar navbar-expand-lg nav__hero navbar-light">
+            <div class="logo">
+                <h2 class="logo__name">Futbol Center<span class="point">.</span></h2>
             </div>
+            <button class="navbar-toggler btn-navbar" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse nav__container" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto links">
+                    <li class="nav-item">
+                        <a href="./index.html" class="link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/Como-llegar.html" class="link">¿Cómo llegar?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/torneos.html" class="link">Torneos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/sponsors.html" class="link">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./pages/contacto.html" class="link link--active">Contacto</a>
+                    </li>
+                </ul>
+                <div>
         </nav>
 
-
+        <!-- Fondo y logo con texto principal -->
         <section class="container hero__main">
             <div class="hero__textos">
                 <h1 class="title">El mejor <span class="title--active">Complejo Deportivo.</span></h1>
@@ -50,16 +63,21 @@
         </section>
     </header>
 
+
     <main>
+        <!-- Encabezado de Presentacion a servicios -->
         <section class="service">
             <div class="container">
                 <h2 class="subtitle">Nuestros servicios<span class="point">.</span></h2>
                 <p class="copy__section">Cuando la gente tiene éxito, es gracias al trabajo duro. La suerte no tiene
                     nada que ver con el éxito. Diego Maradona</p>
 
+
+                <!-- SECCION CARTAS CON  (IMAGENES PERZONALIZADAS) -->
                 <article class="container-cards">
                     <div class="card">
-                        <img src="img/personalizadoadrian1.jpg" class="card__img" alt="imagen personalizada para futbol center">
+                        <img src="img/personalizadoadrian1.jpg" class="card__img"
+                            alt="imagen telefono con pelota personalizada">
                         <div class="cards__text">
                             <p class="card__list">Viví el Futbol con todo el lujo</p>
                             <h3 class="card__title">F.Center<span class="point">.</span></h3>
@@ -69,17 +87,19 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/personalizadoadrian2.jpg" class="card__img" alt="personalizada2 para futbol center">
+                        <img src="img/personalizadoadrian2.jpg" class="card__img"
+                            alt="personalizada2 para futbol center">
                         <div class="cards__text">
                             <p class="card__list">Entrada en calor o post Partido</p>
                             <h3 class="card__title">Ping Pong<span class="point">.</span></h3>
                             <p class="card__copy">Vení a disfrutar de toda la variedad de juegos con los que
-                                contamos.Totalmente Gratis en nuestro buffet</p>
+                                contamos.Totalmente Gratis en nuestro buffet. Trabajamos con las mejores marcas.</p>
                             <a href="#" class="card__button">Entretenimientos</a>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="img/personalizadoadrian3.jpg" class="card__img" alt="personalizada3 para futbol center">
+                        <img src="img/personalizadoadrian3.jpg" class="card__img"
+                            alt="imagen menu bebida hamburguesa personalizada">
                         <div class="cards__text">
                             <p class="card__list">Pasá por nuestro buffet</p>
                             <h3 class="card__title">Buffet y bar<span class="point">.</span></h3>
@@ -91,6 +111,9 @@
                 </article>
             </div>
         </section>
+
+
+        <!-- SECCION TORNEOS (IMAGENES PERZONALIZADAS) -->
         <section class="Torneosfc container">
             <h2 class="subtitle">Torneos recientes<span class="point">.</span></h2>
             <p class="copy__section">Una experiencia diferente junto a tus compañeros</p>
@@ -121,6 +144,9 @@
                 </div>
             </article>
         </section>
+
+
+        <!-- SECCION SPONSORS (IMAGENES PERZONALIZADAS) -->
         <section class="Sponsors">
             <div class="container">
                 <h2 class="subtitle">Sponsors<span class="point">.</span></h2>
@@ -128,7 +154,7 @@
 
                 <div class="Sponsors-container">
                     <div class="Sponsors__card">
-                        <img src="img/forbex.jpg" class="Sponsors__img" alt="imagen sponsor">
+                        <img src="img/forbex.jpg" class="Sponsors__img" alt="imagen forbex sponsor">
                         <div class="Sponsors__copy">
                             <div class="Sponsors__info">
                                 <h3 class="Sponsors__name">Casa Central</h3>
@@ -165,12 +191,13 @@
             </div>
         </section>
 
+        <!-- seccion check -->
         <section class="email container container--modifier">
             <h2 class="subtitle subtitle--modifier">Somos tu mejor opción a la hora de hacer deporte<span
                     class="point">.</span></h2>
 
-            <p class="copy__section copy__section--modifier">-------------------Nuestro fin es que cada uno tenga una
-                experiencia unica e irrepetible en nuestro complejo.------------------- Mediante el compromiso y el
+            <p class="copy__section copy__section--modifier">Nuestro fin es que cada uno tenga una
+                experiencia unica e irrepetible en nuestro complejo. Mediante el compromiso y el
                 profesionalismo de todos los que formamos parte!</p>
 
             <div class="check">
@@ -196,6 +223,9 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- NEWSLETTER PRESENTACION - SIN DESTINO (POR EL MOMENTO) -->
             <div class="parent-wrapper">
                 <span class="close-btn glyphicon glyphicon-remove"></span>
                 <div class="subscribe-wrapper">
@@ -207,12 +237,14 @@
         </section>
     </main>
 
+
+
     <footer class="footer">
         <div class="container footer__caption">
 
+            <!-- Se realizan arreglos de Parrafos -->
             <div class="footer__copy">
                 <p class="copyright">Futbol Center &copy; 2023 Todos los derechos reservados</p>
-                <p>#1</p>
                 <p>Gracias por visitarnos</p>
             </div>
             </section>
@@ -228,6 +260,7 @@
             </section>
         </div>
 
+        <!-- MODO FOOTER INFORMATIVO DE CREADOR -->
         <div class="contact">
             <div class="item__contact">
                 <i class='bx bx-copyright contact__icon'></i>
@@ -247,9 +280,20 @@
             </div>
         </div>
     </footer>
-    <!-- Se repite protocolo en curso-->
+
+
+    <!-- Me faltaron utilizar los js y el colapse de boot (se agregan a proyecto final)-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
 </body>
 
